@@ -1,4 +1,4 @@
-# Ex.No:2(A) HANGING BRIDGE LEG COUNT VALIDATION
+# Ex.No:1(B) CONDITIONAL STATEMENT
 ## QUESTION:
 
 At the annual "KrackerJack Karnival", there was a newest attraction ever in the city, the "Hanging Bridge". Visitors will be able to walk 200ft on the bridge, hanging around 50ft above the ground, and enjoy a wide-angle view of the breathtaking greenery.
@@ -17,21 +17,20 @@ To write a Java program that checks whether the counted number of legs on the ha
 
 ## ALGORITHM :
 
-Start the program.
+1.Start the program.
+2.Import the package java.util.*.
 
-Import the package java.util.*.
+3.Read the number of adults, kids, and legs counted.
 
-Read the number of adults, kids, and legs counted.
+4.Check if the number of legs is odd; if so, print "no".
 
-Check if the number of legs is odd; if so, print "no".
+5.Calculate the minimum number of kids whose legs must touch the ground.
 
-Calculate the minimum number of kids whose legs must touch the ground.
+6.Calculate the minimum and maximum possible number of legs touching the bridge.
 
-Calculate the minimum and maximum possible number of legs touching the bridge.
+7.If the counted legs fall within the valid range, print "yes", otherwise print "no".
 
-If the counted legs fall within the valid range, print "yes", otherwise print "no".
-
-End the program.
+8. End the program.
 
 ## PROGRAM:
 /*
@@ -71,3 +70,4 @@ class prog{
 ## RESULT:
 
 Thus, the Java program to validate Rahul’s leg counting on the hanging bridge was successfully executed.
+
