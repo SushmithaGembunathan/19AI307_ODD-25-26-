@@ -1,20 +1,23 @@
 # Ex.No:2(D) VARIABLE SCOPE AND CONSTRUCTOR
 
 ## QUESTION:
-Create a method with a loop that declares a variable. Show its scope is limited to the loop.
+Write a program to access a static variable using both class name and object.
+
+
 
 ## AIM:
-To write a Java program to create a method with a loop that declares a variable and demonstrate that its scope is limited only within the loop.
+To write a Java program that demonstrates accessing a static variable using both the class name and an object.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Create a method that contains a for loop.
-4.	Declare a variable inside the loop.
-5.	Print the variable value inside the loop.
-6.	Attempt to access the variable outside the loop to show that it is not accessible.
-7.	Call the method from the main() method.
-8.	Stop the program.
+1. Start the program and create a class with a static variable.
+2. Create the main() method and read a value from the user.
+3. Assign the input value to the static variable.
+
+4. Access and print the static variable using the class name and an object of the class.
+5. Stop the program.
+
+
+
 
 
 ## PROGRAM:
@@ -22,28 +25,31 @@ To write a Java program to create a method with a loop that declares a variable 
 /*
 Program to implement a Variable scope and Constructor using Java
 Developed by: Sushmitha Gembunathan
-RegisterNumber:  212224040342
+RegisterNumber: 212224040342
 */
 ```
 
 ## SOURCE CODE:
 ```
-
 import java.util.Scanner;
-class prog{
-    void disp(){
-    Scanner s=new Scanner(System.in);
-    int a=s.nextInt();
-    for(int i=0;i<a;i++) System.out.println("Square of "+i+" is "+i*i);
-    }
-    public static void main(String[] arg){
-          Scanner s=new Scanner(System.in);
-          prog l=new prog();
-          l.disp();
-          //System.out.println(disp.a);
-     }  
 
+class prog {
+    
+    static int num;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        num = sc.nextInt();
+        System.out.println("Accessing using class name: " + prog.num);
+
+        prog obj = new prog();
+        System.out.println("Accessing using object: " + obj.num);
+
+        sc.close();
+    }
 }
+
 ```
 
 
@@ -51,6 +57,8 @@ class prog{
 
 ## OUTPUT:
 
+<img width="797" height="299" alt="image" src="https://github.com/user-attachments/assets/cc80b0ff-cc27-468a-b2b4-78749a686014" />
+
 
 ## RESULT:
-Thus, the Java program demonstrated that a variable declared inside a loop has scope only within that loop and cannot be accessed outside it.
+Thus, the Java program to access a static variable using both class name and object was successfully executed.
