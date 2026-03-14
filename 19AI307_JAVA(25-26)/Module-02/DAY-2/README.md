@@ -1,54 +1,55 @@
 # Ex.No:2(B) METHODS
 
 ## QUESTION:
-Create two methods:
+Write a class with one static method and one non-static method. Call both from the main() method.
 
-Get the input for radius from the user.
+When staticMethod() is called, it should print  "I am static".
 
-double getArea(double r) → calculate the area and return the area(Don't print anything in this method).
+When nonStaticMethod() is called, it should print  "I am non-static"
 
-void printArea(double area) → pass the calculated area to this method and print the area of a circle.
 
 
 ## AIM:
-To create methods in Java to get the radius of a circle from the user, calculate the area using a method that returns the value, and display the area using another method.
+To write a Java program that defines a class with one static method and one non-static method, and calls both methods from the main() method.
+
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Define a class (for example, Circle).
-4.	Create a method to get the radius input from the user.
-5.	Create the method double getArea(double r) to calculate and return the area of the circle.
-6.	Create the method void printArea(double area) to display the calculated area.
-7.	Call the methods from the main() method and stop the program.
+1.	Start the program and define a class MyClass.
+
+2. Create a class.
+
+3. Define a static method named staticMethod() that prints "I am static".
+4. Define a non-static method named nonStaticMethod() that prints "I am non-static".
+5. Create the main() method.
+6. Create an object of the class.
+7. Call the non-static method using the object.
+
+
+
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Methods using Java
 Developed by: Sushmitha Gembunathan
-RegisterNumber:  212224040342
+RegisterNumber: 212224040342
 */
 ```
 
 ## SOURCE CODE:
+
 ```
-import java.util.Scanner;
 class prog{
-    double getArea(double r){
-        double area = 3.14*r*r;
-        return area;
+    static void staticMethod(){
+        System.out.println("I am static");
     }
-    
-    void printArea(double area){
-        System.out.printf("%.2f",area);
+    void nonStaticMethod(){
+        System.out.println("I am non-static");
     }
     public static void main(String[] arg){
-        Scanner s=new Scanner(System.in);
-        int n=s.nextInt();
-        prog c=new prog();
-        double ar=c.getArea(n);
-        c.printArea(ar);
+        prog.staticMethod();
+        prog p=new prog();
+        p.nonStaticMethod();
     }
 }
 ```
@@ -59,7 +60,8 @@ class prog{
 
 ## OUTPUT:
 
+<img width="415" height="177" alt="image" src="https://github.com/user-attachments/assets/42d4690f-4107-4267-9fa7-b525104e3635" />
 
 
 ## RESULT:
-Thus, the Java program to read the radius, calculate the area of a circle using getArea() method, and print the area using printArea() method was executed successfully.
+Thus, the Java program to demonstrate calling static and non-static methods from the main() method was successfully executed.
