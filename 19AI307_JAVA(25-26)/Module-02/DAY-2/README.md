@@ -18,20 +18,9 @@ To create methods in Java to get the radius of a circle from the user, calculate
 2.	Import the necessary package 'java.util'
 3.	Define a class (for example, Circle).
 4.	Create a method to get the radius input from the user.
-5.	Inside this method, create a Scanner object and read the radius value.
-6.	Call the method getArea(double r) and pass the radius as argument.
-7.	In the method getArea(double r), calculate the area of the circle using the formula
-Area = π × r × r.
-8.Return the calculated area to the calling method.
-9.Create another method printArea(double area).
-10.Pass the calculated area to this method.
-11.Print the area of the circle inside this method.
-12.Call these methods from the main() method.
-13.Stop the program. 
-
-
-
-
+5.	Create the method double getArea(double r) to calculate and return the area of the circle.
+6.	Create the method void printArea(double area) to display the calculated area.
+7.	Call the methods from the main() method and stop the program.
 
 ## PROGRAM:
  ```
