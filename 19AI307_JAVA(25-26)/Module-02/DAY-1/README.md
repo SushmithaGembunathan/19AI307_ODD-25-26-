@@ -1,21 +1,24 @@
 # Ex.No:2(A) CLASS AND OBJECT
 
 ## QUESTION:
-Create a class City with attributes: cityName (String), population (long), area (double). Create an object. Print all details.
+Create a class Car with attributes brand, model, year. Create 2 objects and print their details.
+
 
 ## AIM:
-To create a Java class City with attributes cityName, population, and area, create an object of the class, and display the city details.
+To create a Java class Car with attributes brand, model, and year, create two objects of the class, and display their details.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Create a class named City.
-4.	Declare the attributes cityName (String), population (long), and area (double) inside the class.
-5.	Create the main() method.
-6.	Create an object of the City class.
-7.	Assign values to the attributes using the object.
-8.	Print the values of cityName, population, and area.
-9.	Stop the program.
+1.	Start the program and define a class Car with attributes brand, model, and year.
+
+2. Create a class named Car.
+3. Declare the attributes brand (String), model (String), and year (int) inside the class.
+4. Create the main() method.
+5. Create two objects of the Car class.
+6. Assign values to the attributes for both objects.
+7. Print the details of both car objects.
+8. Stop the program.
+
+
 
 
 
@@ -23,37 +26,41 @@ To create a Java class City with attributes cityName, population, and area, crea
  ```
 /*
 Program to implement a Class and Objects using Java
-Developed by: Sushmitha Gembunathan 
-RegisterNumber:  212224040342
+Developed by:Sushmitha Gembunathan
+RegisterNumber: 212224040342
 */
 ```
 
 ## SOURCE CODE:
 ```
-import java.util.Scanner;
-class City {
-    String cityName;
-    long population;
-    double area;
-    void printDetails() {
-        System.out.println("City Name: "+cityName);
-        System.out.println("Population: "+population);
-        System.out.println("Area: "+area);
+class Car {
+    String brand;
+    String model;
+    int year;
+
+    Car(String brand, String model, int year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
+
+    public void display(String label) {
+        System.out.println(label + ": " + brand + " " + model + " " + year);
     }
 }
-class prog {
+
+public class CarDemo {
     public static void main(String[] args) {
-        Scanner scanner= new Scanner(System.in);
-        City c=new City();
-        c.cityName=scanner.nextLine();
-        c.population=scanner.nextLong();
-        c.area=scanner.nextDouble();
-        
-        c.printDetails();
-        scanner.close();
-        }
+
+        Car car1 = new Car("Toyota", "Innova", 2022);
+        Car car2 = new Car("Hyundai", "i20", 2021);
+
+        car1.display("Car 1");
+        car2.display("Car 2");
+    }
 }
 ```
+
 
 
 
@@ -61,7 +68,8 @@ class prog {
 
 ## OUTPUT:
 
+<img width="695" height="186" alt="image" src="https://github.com/user-attachments/assets/db44eda4-4363-45b4-9881-5a444b2f20e2" />
 
 
 ## RESULT:
-Thus, the Java program to create a class City, create its object, and display the city details was successfully executed.
+Thus, the Java program to create a class Car, create two objects, and display their details was successfully executed.
